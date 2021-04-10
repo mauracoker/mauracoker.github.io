@@ -13,3 +13,7 @@
 <script src="weather.js"></script>
   </body>
 </html>
+var weatherAlertsUrl = 'https://api.weather.gov/alerts/active?region_type=land';
+$.getJSON(weatherAlertsUrl, function(data) {
+  // L.geoJSON(data).addTo(map);
+});
